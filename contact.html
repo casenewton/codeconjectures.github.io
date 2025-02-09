@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Code Conjectures</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your stylesheets -->
+    <style>
+        /* Same styles as before */
+        body {
+            background-color: #1d1f21; /* Dark background for a terminal look */
+            color: #c5c8c6; /* Light text color */
+            font-family: 'Courier New', monospace; /* Monospaced font for terminal look */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #222; /* Dark header background */
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #444;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: #f0f0f0;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 0.9em;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-section {
+            background-color: #282a2e;
+            margin: 10px;
+            padding: 15px;
+            width: 70%;
+            border-radius: 5px;
+            border: 1px solid #444;
+        }
+
+            .contact-section h2 {
+                font-size: 1.5em;
+                color: #f4f4f4;
+            }
+
+            .contact-section p {
+                font-size: 1em;
+                color: #bbb;
+                line-height: 1.6;
+            }
+
+            .contact-section form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contact-section label {
+                margin: 10px 0 5px;
+                color: #f4f4f4;
+            }
+
+            .contact-section input, .contact-section textarea {
+                padding: 10px;
+                margin-bottom: 15px;
+                background-color: #333;
+                color: #fff;
+                border: 1px solid #444;
+                border-radius: 5px;
+            }
+
+            .contact-section button {
+                padding: 10px 20px;
+                background-color: #00ff00;
+                border: none;
+                border-radius: 5px;
+                color: #1d1f21;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+                .contact-section button:hover {
+                    background-color: #00cc00;
+                }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+            footer small {
+                color: #777;
+                font-size: 0.8em;
+            }
+
+        @media screen and (max-width: 768px) {
+            .contact-section {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <a href="index.php">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.php">Blog</a>
+            <a href="gallery.php">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feedback, or ideas, feel free to reach out!</p>
+
+            <!-- Contact Form -->
+            <form action="contact_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <small>© 2025 Code Conjectures | Created by Lavian Dsouza</small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
+    background-color: black;
+    color: #33FF00; /* Green text color, typical for terminal */
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    header h1 {
+        font-size: 24px;
+        color: #33FF00; /* Green color for heading */
+    }
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+            nav ul li a {
+                color: #33FF00; /* Green color for links */
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline; /* Add underline on hover for links */
+                }
+
+/* Section Content */
+section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #33FF00; /* Green color for subheadings */
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+    footer p {
+        color: #777;
+    }
+
+/* Styling for External Links */
+a {
+    color: #FF8C00; /* Orange color for external links */
+}
+
+    a:hover {
+        color: #33FF00; /* Hover color for external links */
+    }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+}
